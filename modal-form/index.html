@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal window</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="modal-window">
+      <div class="container">
+        <button data-toggle="modal" class="button buttons__section">
+          Модальное окно на сайте
+        </button>
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: Close"
+        /></a>
+        <h3 class="modal__title modal__title_mb-3">Заголовок</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <div class="date">
+            <h4 class="modal-title date__title">Данные покупателя</h4>
+            <div class="date__wrap">
+              <input
+                type="text"
+                class="modal__input modal__input_name"
+                placeholder="Фамилия"
+                name="name"
+                required
+                minlength="2"
+                autocomplete="on"
+              />
+              <input
+                type="text"
+                class="modal__input modal__input_name"
+                placeholder="Имя"
+                name="name"
+                required
+                minlength="2"
+                autocomplete="on"
+              />
+            </div>
+            <!-- /.date__wrap -->
+            <input
+              type="email"
+              class="modal__input"
+              placeholder="Email"
+              name="email"
+              required
+              autocomplete="on"
+            />
+            <input
+              type="tel"
+              id="hero-modal-phone"
+              class="modal__input"
+              placeholder="Номер телефона"
+              name="phone"
+              required
+              autocomplete="on"
+            />
+            <input
+              type="text"
+              class="modal__input"
+              placeholder="Адрес доставки"
+              name="name"
+              required
+              minlength="2"
+              autocomplete="on"
+            />
+          </div>
+          <!-- /.date -->
+          <div class="delivery">
+            <h4 class="modal-title delivery__title">Способ доставки</h4>
+            <div class="delivery__wrap">
+              <input
+                class="delivery__radio"
+                type="radio"
+                id="courier"
+                name="radio"
+                value="1"
+                autocomplete="on"
+              />
+              <label class="delivery__label" for="courier"
+                >Курьерская доставка по адресу</label
+              >
+            </div>
+            <!-- /.delivery-wrap -->
+            <div class="delivery__wrap">
+              <input
+                class="delivery__radio"
+                type="radio"
+                id="post"
+                name="radio"
+                value="2"
+                autocomplete="on"
+              />
+              <label class="delivery__label" for="post"
+                >Доставка Почтой России</label
+              >
+            </div>
+          </div>
+          <!-- /.delivery__wrap -->
+          <!-- /.delivery -->
+          <div class="payment">
+            <h4 class="modal-title payment__title">оплата</h4>
+            <div class="payment-cards">
+              <div class="payment-card over">
+                <div class="payment-card-number">
+                  <input
+                    type="tel"
+                    class="modal__input payment-card-number__input"
+                    id="card-number"
+                    placeholder="Номер карты"
+                    name="card-number"
+                    maxlength="16"
+                    required
+                    autocomplete="on"
+                  />
+                  <div class="tooltip payment-card-number__tooltip">
+                    <img
+                      src="img/question.svg"
+                      alt="Icon: question"
+                      class="payment-card__icon"
+                    />
+                    <span class="tooltiptext payment-card-number__tooltiptext"
+                      >Номер карты напечатан на лицевой стороне карты и состоит
+                      из 16 или 19 цифр</span
+                    >
+                  </div>
+                  <!-- /.tultip -->
+                </div>
+                <!-- /.paymend-card-number -->
+                <div class="payment-card-year">
+                  <input
+                    type="tel"
+                    class="modal__input payment-card-year__input"
+                    placeholder="мм"
+                    name="month"
+                    maxlength="2"
+                    required
+                    autocomplete="on"
+                  />
+                  <div class="payment-card-year__line"></div>
+                  <input
+                    type="tel"
+                    class="modal__input payment-card-year__input"
+                    placeholder="гг"
+                    name="year"
+                    maxlength="2"
+                    required
+                    autocomplete="on"
+                  />
+                  <div class="tooltip payment-card-year__tooltip">
+                    <img
+                      src="img/question.svg"
+                      alt="Icon: question"
+                      class="payment-card__icon"
+                    />
+                    <span class="tooltiptext payment-card-year__tooltiptext"
+                      >Срок действия указан на лицевой стороне карты в виде 4
+                      цифр: месяц/год</span
+                    >
+                  </div>
+                  <!-- /.tultip -->
+                </div>
+                <!-- /.payment-card__year -->
+                <div class="payment-card-name">
+                  <input
+                    type="text"
+                    class="modal__input payment-card-name__input"
+                    placeholder="Имя владельца"
+                    name="name"
+                    maxlength="2"
+                    required
+                    autocomplete="on"
+                  />
+                  <div class="tooltip payment-card-name__tooltip">
+                    <img
+                      src="img/question.svg"
+                      alt="Icon: question"
+                      class="payment-card__icon"
+                    />
+                    <span class="tooltiptext payment-card-name__tooltiptext"
+                      >Латиницей, как указано на карте</span
+                    >
+                  </div>
+                  <!-- /.tultip -->
+                </div>
+                <!-- /.payment-card-name -->
+              </div>
+              <!-- /.payment-card -->
+              <div class="payment-card under">
+                <div class="under-wrap">
+                  <input
+                    type="tel"
+                    class="modal__input under__input"
+                    id="cvv"
+                    placeholder="cvv"
+                    name="cvv"
+                    maxlength="3"
+                    required
+                    autocomplete="on"
+                  />
+                  <div class="tooltip under__tooltip">
+                    <img
+                      src="img/question.svg"
+                      alt="Icon: question"
+                      class="payment-card__icon"
+                    />
+                    <span class="tooltiptext under__tooltiptext"
+                      >Последние 3 цифры на белой полосе с обратной стороны
+                      карты</span
+                    >
+                  </div>
+                  <!-- /.tultip -->
+                </div>
+                <!-- /.payment-card-under__code -->
+              </div>
+              <!-- /.payment-card -->
+            </div>
+            <!-- /.payment-cards -->
+          </div>
+          <!-- /.payment -->
+          <div class="policy modal__policy">
+            <input
+              type="checkbox"
+              class="policy__checkbox"
+              id="policy"
+              name="policy"
+              checked
+            />
+            <label class="policy__description" for="policy"
+              >Нажимая на кнопку, вы даете согласие на обработку своих
+              персональных данных и соглашаетесь с политикой
+              конфиденциальности.</label
+            >
+          </div>
+          <!-- /.hot__policy -->
+          <button class="button button-form modal__button" type="submit">
+            Оплатить <span>1790 РУБ</span>
+          </button>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

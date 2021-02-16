@@ -1,0 +1,56 @@
+body {
+  max-width: 570px;
+  margin-left: 70px;
+}
+.lead {
+  font-weight: bold;
+}
+.blue {
+  color: blue;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  padding: 20px;
+  background-color: #dbdbdb;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  font-size: 14px;
+  color: rgb(146, 146, 146);
+}
+
+input {
+  padding: 10px 20px;
+  width: 215px;
+}
+.user {
+  font-size: 18px;
+  color: #000;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 30px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svg-sprites</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <svg class="icon">
+      <use xlink:href="img/sprite.svg#Facebook"></use>
+    </svg>
+    <svg class="icon">
+      <use xlink:href="img/sprite.svg#Instagram"></use></svg
+    ><svg class="icon">
+      <use xlink:href="img/sprite.svg#Twitter"></use></svg
+    ><svg class="icon">
+      <use xlink:href="img/sprite.svg#YouTube"></use>
+    </svg>
+    <picture>
+      <source media="(min-width: 950px)" srcset="img/banner.jpg" />
+      <source media="(min-width: 375px)" srcset="img/banner-2.jpg" />
+      <img src="img/banner-3.jpg" alt="Flowers" style="width: auto" />
+    </picture>
+  </body>
+</html>

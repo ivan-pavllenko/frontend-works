@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Tabs on jQuery -->
+
+    <section class="tabs-section">
+      <div class="container">
+        <ul class="tabs">
+          <li data-target="news" class="tabs__item tabs__item--active">
+            Новости
+          </li>
+          <li data-target="newsletter" class="tabs__item">Рассылка</li>
+          <li data-target="contacts" class="tabs__item">Контакты</li>
+          <li data-target="map" class="tabs__item">Карта проезда</li>
+        </ul>
+        <ul class="content">
+          <li id="news" class="content__item content__item--active">Новости</li>
+          <li id="newsletter" class="content__item">Рассылка</li>
+          <li id="contacts" class="content__item">Контакты</li>
+          <li id="map" class="content__item">Карта проезда</li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.tabs-section -->
+
+    <!-- Accordion on jQuery, js -->
+
+    <section class="accordion-section">
+      <div class="container">
+        <div class="block one">
+          <div class="block__item">
+            <div class="block__title">Заголовок №1</div>
+            <div class="block__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              ea iusto velit debitis libero cupiditate blanditiis, tempore
+              repellendus odit quod!
+            </div>
+          </div>
+          <!-- block__item -->
+          <div class="block__item">
+            <div class="block__title">Заголовок №2</div>
+            <div class="block__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              ea iusto velit debitis libero cupiditate blanditiis, tempore
+              repellendus odit quod!
+            </div>
+          </div>
+          <!-- block__item -->
+          <div class="block__item">
+            <div class="block__title">Заголовок №3</div>
+            <div class="block__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              ea iusto velit debitis libero cupiditate blanditiis, tempore
+              repellendus odit quod!
+            </div>
+          </div>
+          <!-- block__item -->
+        </div>
+        <!-- /.block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.accordion-section -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

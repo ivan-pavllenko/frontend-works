@@ -1,0 +1,132 @@
+@media (min-width:1024px)
+  .navbar
+    &-button
+      &:hover
+        color: #ffffff
+        background-color: #1565D8
+  .menu
+    &__link
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        width: 0
+        height: 3px
+        background-color: #36B37E
+        transition: width 0.3s ease-out
+      &:hover
+        &:after
+          width: 100%
+      &:focus
+        &:after
+          width: 100%
+
+@media screen and ( max-width: 1200px )
+  .container
+    max-width: 960px
+
+@media screen and ( max-width: 992px )
+  .container
+    max-width: 720px
+  body
+    padding-top: 101px
+  body.lock
+    overflow: hidden
+  .navbar
+    background-color: #ffffff
+    padding-bottom: 0
+    &_mobile
+      &_fixed
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99
+    &-navigation
+      display: none
+      flex-direction: column
+      align-items: center
+      position: fixed
+      left: 0px
+      right: 0px
+      bottom: 0px
+      top: 0px
+      padding: 36px 22px
+      height: 100%
+      overflow: auto
+      background-color: #ffafaf
+      &_visible
+        display: flex
+      &__navbar-menu
+        margin: 0
+      &__navbar-button
+        width: 256px
+
+  .menu
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-right: 0
+    &__item
+      margin-right: 0
+      margin-bottom: 20px
+    &-button
+      display: flex
+      position: relative
+      width: 22px
+      height: 2.2px
+      background-color: #3A4C66
+      border-radius: 50px
+      cursor: pointer
+      &:before
+        position: absolute
+        left: 0
+        top: -7px
+        content: ''
+        width: 22px
+        height: 2.2px
+        background-color: #3A4C66
+        border-radius: 50px
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+      &:after
+        position: absolute
+        left: 0
+        top: 7px
+        content: ''
+        width: 22px
+        height: 2.2px
+        background-color: #3A4C66
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+      &_active
+        background-color: transparent
+        &:before
+          transform: rotate(45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+        &:after
+          transform: rotate(-45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+  .modal
+    &__dialog
+      max-width: 90%
+      max-height: 100%
+      overflow: scroll
+
+@media screen and ( max-width: 767px )
+  .container
+    max-width: 540px
+    width: 92%
+  .modal
+    &__info
+      margin-top: 15px
+    &__button
+      width: 100%
+
+@media screen and ( max-width: 576px )
+  .container
+    width: 88%
+  .modal
+    &__dialog
+      padding: 33px 40px

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful - solutions</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Mobile menu button -->
+    <header class="navbar navbar_mobile_fixed">
+      <div class="container">
+        <div class="navbar-wrapper">
+          <a href="index.html" class="logo">
+            <img
+              src="img/horizontal-logo.svg"
+              alt="Logo - Ehya"
+              class="logo__image"
+            />
+          </a>
+          <!-- /.navbar-logo -->
+          <div class="navbar-navigation">
+            <nav class="navbar-menu navbar-navigation__navbar-menu">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Landings</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Pages</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Docs</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Help</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="navbar-button navbar-navigation__navbar-button">
+              Get it now
+            </button>
+          </div>
+          <!-- /.navbar-menu -->
+          <div class="menu-button menu-button_hidden"></div>
+          <!-- menu-button -->
+        </div>
+        <!-- /.navbar-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <section class="buttons">
+      <div class="container">
+        <button
+          data-toggle="modal-hero"
+          data-href="#hero-modal"
+          class="button buttons__section"
+        >
+          Модальное окно одно на сайте
+        </button>
+        <button
+          data-toggle="modal"
+          data-href="#booking-modal"
+          class="button buttons__section"
+        >
+          Модальное окно 1
+        </button>
+        <button
+          data-toggle="modal"
+          data-href="#rating-modal"
+          class="button buttons__section"
+        >
+          Модальное окно 2
+        </button>
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- /.Modal-window  id="hero-modal"-->
+
+    <div class="modal" id="hero-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: Close"
+        /></a>
+        <h3 class="modal__title modal__title_mb-3">Hero</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            id="hero-modal-phone"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button button-form modal__button" type="submit">
+            Send
+          </button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- /.Modal-window  id="booking-modal"-->
+
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: Close"
+        /></a>
+        <h3 class="modal__title modal__title_mb-3">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            id="booking-modal-phone"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button button-form modal__button" type="submit">
+            Send
+          </button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- /.Modal-window  id="rating-modal"-->
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/horizontal-logo.svg" alt="Icon: Close"
+        /></a>
+        <h3 class="modal__title modal__title_mb-3">Rating</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            id="rating-modal-phone"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button button-form modal__button" type="submit">
+            Send
+          </button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+      <div class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquam
+        quibusdam totam voluptatem sunt sint accusamus, a, ipsa odit debitis
+        vitae! Eligendi optio ipsa praesentium quos labore voluptas repellendus
+        modi fugiat rerum quas esse atque debitis nulla quisquam veniam, magnam
+        hic nihil cum. Sint libero aliquid facilis hic magnam provident incidunt
+        impedit, dolor enim laudantium iste doloribus suscipit in possimus. Quis
+        ullam debitis hic modi nesciunt error neque commodi rem nisi? Suscipit
+        ab culpa ducimus nemo cupiditate repellendus ad, itaque inventore vitae
+        quo nisi ut mollitia omnis similique commodi velit nihil delectus harum
+        distinctio, deleniti dolorum, sed earum? Veniam sapiente reiciendis
+        iusto consequatur eum iste nobis unde nemo aut eius iure cupiditate,
+        quasi, delectus inventore. Iusto animi, iure eveniet similique quo
+        numquam libero architecto ad doloribus neque distinctio voluptas,
+        ratione quos, maxime et quisquam aliquam voluptatem reiciendis quibusdam
+        perferendis consectetur molestias nihil ullam a? Repudiandae, nostrum
+        qui! Placeat porro, totam cumque beatae pariatur dolore sed tenetur eos
+        non. Eos sunt quam expedita cum? Quisquam corporis sit facilis tempore
+        quis obcaecati placeat. Exercitationem neque id eum ad explicabo soluta
+        sapiente blanditiis. Ea exercitationem laudantium, sint blanditiis
+        distinctio ratione velit voluptatum maxime, nesciunt, porro quo magni
+        doloremque. Eaque aut magnam illum quae maiores. Officiis quos
+        doloremque voluptatum totam ipsum ab perferendis, mollitia explicabo
+        blanditiis, temporibus deserunt fugiat quia impedit. Asperiores tempora
+        ipsum quo placeat iure, fugiat laborum nihil totam dolorem
+        necessitatibus neque. Architecto ipsa cumque amet iure quas, adipisci
+        sit quisquam, expedita animi sequi maxime earum? Unde optio voluptatibus
+        consectetur officia consequatur quos necessitatibus cum odio minus illo
+        suscipit ratione vero, perferendis deleniti? Dignissimos provident
+        laboriosam cupiditate autem id vel mollitia explicabo recusandae? Minima
+        accusamus minus veniam magnam vero deserunt ipsum sapiente culpa numquam
+        placeat, repellat illum, nesciunt aperiam nam corrupti eveniet.
+        Architecto sit quasi debitis blanditiis eligendi, ut hic eum, aspernatur
+        modi minus quo laudantium sed suscipit quibusdam? Temporibus
+        consequuntur voluptates consectetur eum, rem impedit excepturi dolores
+        rerum repudiandae culpa voluptas voluptatem a ullam in, ratione odio
+        corrupti fugit aut assumenda aperiam fuga, est harum praesentium.
+        Consectetur atque autem aperiam deserunt repudiandae, labore alias iusto
+        expedita perspiciatis aliquam amet quasi distinctio quam, accusantium
+        soluta? Est optio sed dignissimos aut praesentium magni modi molestias.
+        Enim, sint numquam magnam quae vel autem consectetur corrupti aut
+        accusamus consequuntur aspernatur necessitatibus eius quam? Odio
+        voluptas ab maxime vitae cumque nisi rerum esse animi asperiores dolore
+        autem quae numquam magnam, quibusdam qui sequi totam, odit quia nobis
+        blanditiis. Iure provident adipisci quam ad, consequuntur, autem
+        perferendis tenetur accusantium quo, ullam quibusdam dolore. Illo facere
+        non similique, labore optio pariatur saepe consequuntur cumque totam
+        doloribus, autem dicta molestias voluptatum laudantium nesciunt! Quae
+        itaque distinctio error rerum dolor illo. Molestias facere minima
+        officiis aut, cupiditate ducimus, illum mollitia maxime, perspiciatis
+        quam nihil provident quo soluta facilis nobis libero. Corrupti id
+        assumenda, error voluptates incidunt quia et asperiores aliquid sed
+        tempora rerum fugiat quo quos laboriosam facere ea at veniam iusto non.
+        Ut debitis fugit saepe illo sequi sed id dignissimos perspiciatis
+        nostrum, repellat nesciunt cum facere nemo atque sapiente adipisci?
+        Temporibus, ducimus architecto ipsam perferendis soluta in fugiat.
+        Corporis eos, tempore voluptas illum animi, veniam, laudantium cum et
+        enim explicabo sequi esse debitis sit perspiciatis accusamus expedita
+        non provident. Reiciendis ullam adipisci unde neque impedit voluptates
+        placeat? Assumenda impedit natus excepturi magnam nulla tenetur
+        asperiores necessitatibus aut est hic voluptatem eum iste id odit amet,
+        autem exercitationem ratione ducimus obcaecati pariatur? Repellendus
+        rerum rem ullam dolorum quibusdam numquam molestias veritatis libero
+        obcaecati id sapiente, voluptatibus iusto repellat nemo dolore modi sit
+        ipsam doloremque minima ipsa at impedit. A suscipit consequatur at
+        similique alias iste fugit aspernatur, quas error eius minima velit cum,
+        hic nisi? Temporibus dicta pariatur deserunt necessitatibus suscipit
+        eligendi exercitationem numquam repellat, eaque at cum quos, laudantium
+        assumenda tenetur rem perspiciatis, sed laborum architecto nulla alias
+        enim. Qui dolor nihil ratione mollitia debitis eius aut voluptate
+        tempore dolorum unde optio inventore dolores voluptatibus in laborum,
+        quod distinctio! Dolorum laudantium odio tenetur at quasi minus, tempore
+        natus praesentium! Dicta iusto fugit, illo sint dolores molestias sed
+        dolore voluptates tempora autem id omnis et, nihil nisi veritatis. Vel,
+        corrupti perspiciatis architecto culpa ad consequatur autem quis numquam
+        minima ducimus dolorem velit error officia deserunt iure veniam quas
+        illum praesentium neque consectetur excepturi quidem voluptatum?
+        Voluptas adipisci repellat sapiente dolore. Delectus obcaecati laborum
+        error laudantium rerum ex harum mollitia sunt soluta ratione aperiam aut
+        corrupti fugiat voluptate quo praesentium blanditiis modi rem facere
+        natus cupiditate, quidem pariatur neque. Quam similique alias debitis
+        commodi, quaerat non quidem quae. Minus magnam dignissimos, odio optio
+        porro, incidunt sapiente qui ducimus repellendus dolore illo excepturi
+        tempore ad dolores fuga facere rerum repudiandae quae tenetur, numquam
+        possimus expedita consectetur. Quaerat tenetur totam saepe, veniam
+        consequuntur hic sunt, maiores recusandae ipsa adipisci asperiores minus
+        doloribus deserunt, aliquam similique odit eius et delectus repellendus
+        quos ex possimus quam nemo laboriosam. Eum provident, excepturi qui
+        molestiae recusandae animi cumque cum mollitia enim veniam officia,
+        nobis amet architecto deleniti quis aspernatur assumenda! Quas,
+        necessitatibus? Distinctio doloribus rem nemo dolore eius quasi eos
+        magni perferendis quis dolores voluptate, commodi iste velit modi,
+        incidunt ipsam recusandae, facere magnam! Aspernatur, temporibus non
+        accusamus ex vitae laboriosam fuga, blanditiis est repellendus
+        perspiciatis dignissimos modi qui quis. Quia ea laboriosam tempora
+        nostrum. Soluta quasi delectus laboriosam minus praesentium provident
+        accusantium nulla odit, eum debitis dolores quaerat corporis tempora,
+        exercitationem nostrum quae veniam neque eos sit! Sint recusandae
+        accusamus iure tempora cupiditate voluptatum dicta inventore, maxime
+        quam voluptate, temporibus sapiente molestiae explicabo, ducimus
+        perferendis eius! Odio reiciendis perferendis voluptas excepturi omnis
+        fugit obcaecati rerum! Neque omnis officia quasi explicabo delectus
+        cupiditate consequatur incidunt minus! Omnis, quod esse labore fuga
+        sequi amet in, expedita enim, repellat ipsum ratione ex facilis ipsa
+        vitae dolores unde distinctio numquam minima? Atque neque illum unde
+        commodi. Harum nesciunt blanditiis placeat cumque totam aperiam dolore
+        voluptatibus ullam. Pariatur repudiandae fugiat nesciunt nisi iusto
+        ducimus facere, animi blanditiis repellat dignissimos alias ad quod?
+        Quae blanditiis harum natus sint expedita consectetur, reprehenderit at
+        recusandae magnam, distinctio amet sunt eos eum fuga! Asperiores!
+      </div>
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

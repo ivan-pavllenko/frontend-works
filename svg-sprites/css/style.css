@@ -1,0 +1,24 @@
+body {
+  background-color: #6c90d8;
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  fill: aquamarine;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 1s ease;
+}
+.icon:hover {
+  fill: blueviolet;
+  transform: rotate(360deg);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+}

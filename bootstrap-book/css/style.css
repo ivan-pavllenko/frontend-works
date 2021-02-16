@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #32325f;
+}
+
+.hero {
+  background-color: #f4f5f7;
+  padding-top: 70px;
+  padding-bottom: 190px;
+}
+.main {
+  margin-top: 100px;
+}
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+.socials__link {
+  margin-right: 20px;
+}
+.socials__link:last-child {
+  margin-right: 0;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+.price {
+  display: block;
+  font-size: 48px;
+  font-weight: 400;
+}
+.main-image {
+  max-width: 100%;
+}
+.aboute {
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+.about-block {
+  margin-top: 100px;
+}
