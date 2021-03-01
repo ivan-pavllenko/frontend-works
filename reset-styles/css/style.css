@@ -43,17 +43,20 @@ button,
 textarea {
   font-family: inherit;
 }
-
+/* Убирает  крестик в input в Internet explorer */
 input::-ms-clear {
   display: none;
 }
 button {
   cursor: pointer;
 }
+/* Убирает  лишние отступы для кнопок в Firefox */
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
+/* Чистятся стили маркерованых списках */
 a,
 a:visited {
   text-decoration: none;
@@ -79,15 +82,26 @@ h6 {
 }
 /*--------------------*/
 
-/* Адаптивный шрифт */
+/*? Адаптивный шрифт */
 body {
-  font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+  font-size: calc(24px + (40 - 24) * ((100vw - 320px) / (1200 - 320)));
 }
+/*? 24px - min размер шрифта на 320px  */
+/*? (40 - 24 = 16) добавочное число, от шрифта по макету 40px отнимаем min размер шрифта 24px */
 
 /* SCSS Миксин:
-$maxWidth: 1280;
+$maxWidth: 1200;
 @mixin adaptiv-font($pcSize, $mobSize) {
- $addSize: $pcSize - $mobSize;
- $maxWidth: $maxWidth - 320;
- font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 } */
+
+/*? Адаптивное (отзывчивое) CSS свойство */
+@media (max-width: 1200px) {
+  .block {
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
+  }
+}
+/*? 20px - min размер padding который я хочу увидеть на разрешении 320px */
+/*? 50px - изначальный размер padding который на разрешении 1200px */
