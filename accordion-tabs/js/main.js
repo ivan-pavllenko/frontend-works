@@ -15,14 +15,14 @@ $(document).ready(function () {
   });
 
   // Accordion on js
-  $('.block__title').click(function(event) {
-    if($('.block').hasClass('one')){
+  $('.block__title').click(function (event) {
+    if ($('.block').hasClass('one')) {
       $('.block__title').not($(this)).removeClass('block__title--active');
       $('.block__text').not($(this).next()).slideUp(300);
     }
-    $(this).toggleClass('block__title--active').next().slideToggle(300)
-    
-  })
-  
-   
+    $(this).toggleClass('block__title--active').next().slideToggle(300);
+
+  });
+
+
 });
